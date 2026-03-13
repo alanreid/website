@@ -1,0 +1,14 @@
+title: "Alan Reid | Fractional CTO & Technology Advisor"
+url: "https://alanreid.de"
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  blanklines: false
+
+exclude:
+  - cv.md
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock

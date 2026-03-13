@@ -1,0 +1,4 @@
+_site/
+*.html
+_includes/**/*.html
+_layouts/**/*.html

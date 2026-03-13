@@ -1,0 +1,169 @@
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>{{ page.title }}</title>
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    {% if page.noindex %}
+      <meta name="robots" content="noindex, nofollow" />
+    {% endif %}
+    <meta name="theme-color" content="#0a0f1a" />
+    {% if page.homepage %}
+      <meta property="og:title" content="Alan Reid | Fractional CTO &amp; Technology Advisor" />
+      <meta property="og:description" content="Fractional CTO, freelance development, AI strategy, tech advisory, and tech due diligence. 20+ years building software products. Based in Berlin." />
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:url" content="https://alanreid.de/" />
+      <meta property="og:image" content="https://alanreid.de/alan.jpg" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="Alan Reid | Fractional CTO &amp; Technology Advisor" />
+      <meta name="twitter:description" content="Fractional CTO, freelance development, AI strategy, tech advisory, and tech due diligence. 20+ years building software products. Based in Berlin." />
+      <meta name="twitter:image" content="https://alanreid.de/alan.jpg" />
+      <link rel="canonical" href="https://alanreid.de/" />
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Alan Reid",
+          "description": "Fractional CTO, freelance development, AI strategy, tech advisory, and tech due diligence. 20+ years building software products. Based in Berlin, Germany.",
+          "url": "https://alanreid.de/",
+          "email": "mail@alanreid.de",
+          "areaServed": ["DE", "GB", "US", "EU"],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Berlin",
+            "addressCountry": "DE"
+          },
+          "founder": {
+            "@type": "Person",
+            "name": "Alan Reid",
+            "jobTitle": "Fractional CTO & Technology Advisor",
+            "url": "https://alanreid.de/",
+            "sameAs": ["https://www.linkedin.com/in/alangreid/"]
+          },
+          "knowsAbout": [
+            "Fractional CTO", "AI Strategy", "TypeScript", "Node.js",
+            "React", "AWS", "Kubernetes", "Tech Due Diligence", "Software Architecture"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Fractional CTO",
+                  "description": "Technology strategy, roadmap, architecture decisions, AI strategy and adoption, vendor evaluation, and delivery optimization."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Freelance Development",
+                  "description": "Full-stack development with TypeScript, Node.js, React, AWS, serverless, and Kubernetes."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Tech Advisory",
+                  "description": "Technical decision support and AI strategy for founders and executives."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Tech Due Diligence",
+                  "description": "Codebase, infrastructure, and team assessment for investors and acquirers."
+                }
+              }
+            ]
+          }
+        }
+      </script>
+    {% endif %}
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <style>{% include style.css %}</style>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    {% if page.legal %}
+      <nav class="nav legal-nav" aria-label="Main navigation">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo">Alan Reid</a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    {% else %}
+      <div class="nav-overlay" id="navOverlay"></div>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <div class="nav-inner">
+          <a href="#" class="nav-logo">Alan Reid</a>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact" class="nav-cta">Get in touch</a></li>
+          </ul>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    {% endif %}
+
+    {% unless page.legal %}
+      <a href="#contact" class="fixed-cta btn btn-primary" id="fixedCta">Get in touch</a>
+    {% endunless %}
+
+    <main id="main"{% if page.legal %} class="legal-page"{% endif %}>
+      {{ content }}
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="imprint.html">Imprint</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <span class="footer-copy">&copy; 2026 Alan Reid</span>
+      </div>
+    </footer>
+  </body>
+</html>
