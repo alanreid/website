@@ -32,6 +32,17 @@ navLinks.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", closeNav);
 });
 
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (e) => {
+    const id = link.getAttribute("href").slice(1);
+    const target = id ? document.getElementById(id) : null;
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
 navOverlay.addEventListener("click", closeNav);
 
 const heroCta = document.getElementById("heroCta");
