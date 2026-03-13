@@ -219,7 +219,7 @@ section[id] {
 }
 
 .nav.scrolled .nav-links a.nav-cta {
-  color: #021512;
+  color: #fff;
 }
 
 .nav.scrolled .nav-links a:hover,
@@ -841,6 +841,7 @@ section[id] {
    ========================================================================== */
 
 .fixed-cta {
+  display: none;
   position: fixed;
   bottom: 1.5rem;
   left: 50%;
@@ -1052,6 +1053,10 @@ section[id] {
 
 /* Tablet */
 @media (max-width: 768px) {
+  .fixed-cta {
+    display: block;
+  }
+
   section {
     padding: 4.5rem 0;
   }
