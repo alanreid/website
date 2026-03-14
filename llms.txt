@@ -1,0 +1,32 @@
+# Alan Reid — Fractional CTO & Technology Advisor
+
+> Senior technical consulting and hands-on engineering. 20+ years building software products. Based in Berlin, available remotely.
+
+## Services
+
+- **Fractional CTO**: Technology strategy & roadmap advisory, architecture consulting, AI strategy & adoption, vendor & tool evaluation, engineering process consulting. For teams without a CTO.
+- **Tech Advisory**: Helping founders and executives cut through complexity — where AI moves the needle, choosing the right technical path before it gets expensive to change course.
+- **Tech Due Diligence**: Codebase, infrastructure, and team assessments for investors, acquirers, and boards who want the real state of things.
+- **Software Engineering**: Architecting and building systems for scale and reliability — event-processing pipelines, production-ready infrastructure.
+
+## About
+
+Alan has co-founded companies in Berlin and Buenos Aires, led engineering teams, and built products for clients from fintech to fitness across the US and Europe. He brings dual perspective: hands-on technical depth combined with real business acumen. Fluent in English, German, and Spanish.
+
+### Technologies
+
+AI/LLMs, TypeScript, Node.js, React, AWS, DevOps, Serverless, CI/CD, Kubernetes, Terraform, GraphQL
+
+### Industries
+
+Fintech, Health & Fitness, Mobility, AI, E-commerce, SaaS
+
+### Select Clients
+
+Gymondo, 7Mind, Abowire, Nomo Bank, Avala AI, Sport Thieme, Circ Mobility, Kettlebell Kitchen, Aureum Technologies
+
+## Contact
+
+- Email: mail@alanreid.de
+- LinkedIn: https://www.linkedin.com/in/alangreid/
+- Website: https://alanreid.de
